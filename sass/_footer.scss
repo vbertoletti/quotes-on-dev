@@ -15,6 +15,11 @@
       border-right: 1px solid white;
       padding: 0 10px;
 
+      &:hover {
+        color:$color_hover_links;
+
+      }
+
     }
 
     .page-item-210 a {
@@ -38,6 +43,27 @@
       &:hover {
         color:$color_hover_links;
       }
+    }
+  }
+
+  .site-info {
+    @include tablet-size {
+      display: flex;
+
+      p {
+        margin: 0;
+        padding-left: 10px;
+      }
+
+      .page-item-210 a {
+        border-right: 1px solid white;
+      }
+  
+    }
+
+    @include desktop-size {
+      justify-content: flex-end;
+    
     }
   }
 }

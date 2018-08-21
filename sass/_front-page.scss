@@ -1,7 +1,5 @@
 .home {
-
   margin-left: 1rem;
-
 
   .content-area {
 
@@ -16,6 +14,14 @@
       color: $color__background-body;
       font-size: 1.5rem;
 
+      @include tablet-size {
+        font-size: 1.8rem;
+      }
+  
+      @include desktop-size {
+        font-size: 2.5rem;
+      }
+
     }
   }
 
@@ -23,6 +29,16 @@
     height: 3rem;
     margin-top: 1rem;
     margin-bottom: 4rem;
+
+    @include tablet-size {
+      height: 80px;
+      text-align: left;
+    }
+
+    @include desktop-size {
+      text-align: center;
+      height: 100px;
+    }
 
   }
 
@@ -68,6 +84,10 @@
     text-shadow: none;
     font-family: $font_primary;
     margin-bottom: 5rem;
+
+    @include tablet-size {
+      font-size: 1.3rem;
+    }
     }
   }
 

@@ -2,8 +2,13 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-body {
+body{
   background: $color_background;
+
+  #page {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
 }
 /* All Archives Page */
 

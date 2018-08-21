@@ -313,10 +313,24 @@ big {
     font-weight: 300;
     color: #fff;
     font-size: 1.5rem; }
+    @media screen and (min-width: 620px) {
+      .home .content-area p {
+        font-size: 1.8rem; } }
+    @media screen and (min-width: 1080px) {
+      .home .content-area p {
+        font-size: 2.5rem; } }
   .home .logo {
     height: 3rem;
     margin-top: 1rem;
     margin-bottom: 4rem; }
+    @media screen and (min-width: 620px) {
+      .home .logo {
+        height: 80px;
+        text-align: left; } }
+    @media screen and (min-width: 1080px) {
+      .home .logo {
+        text-align: center;
+        height: 100px; } }
   .home .site-main .entry-meta {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -349,6 +363,9 @@ big {
     text-shadow: none;
     font-family: "Exo", sans-serif;
     margin-bottom: 5rem; }
+    @media screen and (min-width: 620px) {
+      .home .site-main #new-quote-button {
+        font-size: 1.3rem; } }
 
 .fa-quote-left,
 .fa-quote-right {
@@ -667,6 +684,9 @@ object {
 --------------------------------------------------------------*/
 body {
   background: #222222; }
+  body #page {
+    max-width: 1080px;
+    margin: 0 auto; }
 
 /* All Archives Page */
 /* Submit a Quote Page */
@@ -685,6 +705,9 @@ body {
     font-weight: 300;
     border-right: 1px solid white;
     padding: 0 10px; }
+    .site-footer ul .page_item a:hover,
+    .site-footer ul a:visited:hover {
+      color: #090; }
   .site-footer ul .page-item-210 a {
     border: 0; }
   .site-footer ul .page-item-2 a {
@@ -699,3 +722,20 @@ body {
     color: #00cc00; }
     .site-footer p a:hover {
       color: #090; }
+
+@media screen and (min-width: 620px) {
+  .site-footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .site-footer .site-info p {
+      margin: 0;
+      padding-left: 10px; }
+    .site-footer .site-info .page-item-210 a {
+      border-right: 1px solid white; } }
+
+@media screen and (min-width: 1080px) {
+  .site-footer .site-info {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
