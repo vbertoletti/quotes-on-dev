@@ -1,0 +1,84 @@
+.home {
+
+  margin-left: 1rem;
+
+
+  .content-area {
+
+    i{
+      display: none;
+
+    }
+
+    p{
+      font-family: $font_primary;
+      font-weight: 300;
+      color: $color__background-body;
+      font-size: 1.5rem;
+
+    }
+  }
+
+  .logo {
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+  }
+
+  .site-main {
+
+    .entry-meta {
+      display: flex;
+      font-family: $font_primary;
+      font-weight: 300;
+      color: $color__background-body;
+  
+      h2 {
+        font-weight: 300;
+        margin:0;
+      }
+  
+      span, p{
+        font-style: italic;
+        font-size: 1.5rem;
+  
+      }
+  
+      a{
+        color: $color_quotes;
+        text-decoration: none;
+        font-style: italic;
+  
+        &:hover {
+          color:$color_hover_links;
+        }
+      }
+    }
+
+    #new-quote-button {
+    background-color: transparent;
+    border: 2px solid $color_quotes;
+    border-radius: 3px;
+    color: $color_quotes;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+    box-shadow: none;
+    text-shadow: none;
+    font-family: $font_primary;
+    margin-bottom: 5rem;
+    }
+  }
+
+
+
+
+}
+
+
+
+.fa-quote-left,
+.fa-quote-right {
+  color:$color_quotes;
+}

@@ -15,13 +15,16 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<i class="fa fa-quote-left"></i>
 				<?php
 				/**
 				 * Content Template
 				 */
+				
 				get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
+			<i class="fa fa-quote-right"></i>
 
 		<?php else : ?>
 

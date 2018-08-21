@@ -1,0 +1,44 @@
+.site-footer {
+  ul {
+    display: flex;
+    margin:0;
+    padding: 0;
+
+    list-style: none;
+
+    .page_item a,
+      a:visited{
+      color: $color_quotes;
+      text-decoration: none;
+      font-family: $font_primary;
+      font-weight: 300;
+      border-right: 1px solid white;
+      padding: 0 10px;
+
+    }
+
+    .page-item-210 a {
+      border:0;
+    }
+
+    .page-item-2 a {
+      padding-left: 0;
+    }
+  }
+
+  p{
+    font-family: $font_primary;
+    font-weight: 300;
+    color: $color__background-body;
+
+    a{
+      text-decoration: none;
+      color: $color_quotes;
+
+      &:hover {
+        color:$color_hover_links;
+      }
+    }
+  }
+}
+

@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Medium.eot");
+  src: url("../../fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Medium.woff") format("woff"), url("../../fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-MediumItalic.eot");
+  src: url("../../fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-MediumItalic.woff") format("woff"), url("../../fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-LightItalic.eot");
+  src: url("../../fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-LightItalic.woff") format("woff"), url("../../fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Light.eot");
+  src: url("../../fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Light.woff") format("woff"), url("../../fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -275,6 +303,56 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.home {
+  margin-left: 1rem; }
+  .home .content-area i {
+    display: none; }
+  .home .content-area p {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.5rem; }
+  .home .logo {
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem; }
+  .home .site-main .entry-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fff; }
+    .home .site-main .entry-meta h2 {
+      font-weight: 300;
+      margin: 0; }
+    .home .site-main .entry-meta span, .home .site-main .entry-meta p {
+      font-style: italic;
+      font-size: 1.5rem; }
+    .home .site-main .entry-meta a {
+      color: #00cc00;
+      text-decoration: none;
+      font-style: italic; }
+      .home .site-main .entry-meta a:hover {
+        color: #090; }
+  .home .site-main #new-quote-button {
+    background-color: transparent;
+    border: 2px solid #00cc00;
+    border-radius: 3px;
+    color: #00cc00;
+    font-size: 1rem;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    font-family: "Exo", sans-serif;
+    margin-bottom: 5rem; }
+
+.fa-quote-left,
+.fa-quote-right {
+  color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -587,5 +665,37 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+  background: #222222; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
+.site-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .site-footer ul .page_item a,
+  .site-footer ul a:visited {
+    color: #00cc00;
+    text-decoration: none;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    border-right: 1px solid white;
+    padding: 0 10px; }
+  .site-footer ul .page-item-210 a {
+    border: 0; }
+  .site-footer ul .page-item-2 a {
+    padding-left: 0; }
+
+.site-footer p {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  color: #fff; }
+  .site-footer p a {
+    text-decoration: none;
+    color: #00cc00; }
+    .site-footer p a:hover {
+      color: #090; }
