@@ -76,10 +76,10 @@ function qod_scripts() {
 	 */
 	 	wp_localize_script( 'api', 'qod_vars', array(
 			 'rest_url' => esc_url_raw( rest_url() ),
+			 'home_url' => esc_url_raw( home_url() ),
 			 'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
 			 'success' => 'yess',
 			 'failure' => 'too bad'
-
 		));
 
 }

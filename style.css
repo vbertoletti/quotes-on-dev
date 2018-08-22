@@ -304,59 +304,59 @@ mark, ins {
 big {
   font-size: 125%; }
 
-.home {
+body {
   margin-left: 1rem; }
-  .home .content-area .fa-quote-left,
-  .home .content-area .fa-quote-right {
+  body .content-area .fa-quote-left,
+  body .content-area .fa-quote-right {
     display: none; }
     @media screen and (min-width: 1080px) {
-      .home .content-area .fa-quote-left,
-      .home .content-area .fa-quote-right {
+      body .content-area .fa-quote-left,
+      body .content-area .fa-quote-right {
         display: inline;
         color: #00cc00; } }
-  .home .content-area p {
+  body .content-area p {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fff;
     font-size: 1.5rem; }
     @media screen and (min-width: 620px) {
-      .home .content-area p {
+      body .content-area p {
         font-size: 1.8rem; } }
     @media screen and (min-width: 1080px) {
-      .home .content-area p {
+      body .content-area p {
         font-size: 2.5rem; } }
-  .home .logo {
+  body .logo {
     height: 3rem;
     margin-top: 1rem;
     margin-bottom: 4rem; }
     @media screen and (min-width: 620px) {
-      .home .logo {
+      body .logo {
         height: 80px;
         text-align: left; } }
     @media screen and (min-width: 1080px) {
-      .home .logo {
+      body .logo {
         text-align: center;
         height: 100px; } }
-  .home .site-main .entry-meta {
+  body .site-main .entry-meta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fff; }
-    .home .site-main .entry-meta h2 {
+    body .site-main .entry-meta h2 {
       font-weight: 300;
       margin: 0; }
-    .home .site-main .entry-meta span, .home .site-main .entry-meta p {
+    body .site-main .entry-meta span, body .site-main .entry-meta p {
       font-style: italic;
       font-size: 1.5rem; }
-    .home .site-main .entry-meta a {
+    body .site-main .entry-meta a {
       color: #00cc00;
       text-decoration: none;
       font-style: italic; }
-      .home .site-main .entry-meta a:hover {
+      body .site-main .entry-meta a:hover {
         color: #090; }
-  .home .site-main #new-quote-button {
+  body .site-main #new-quote-button {
     background-color: transparent;
     border: 2px solid #00cc00;
     border-radius: 3px;
@@ -370,7 +370,7 @@ big {
     font-family: "Exo", sans-serif;
     margin-bottom: 5rem; }
     @media screen and (min-width: 620px) {
-      .home .site-main #new-quote-button {
+      body .site-main #new-quote-button {
         font-size: 1.3rem; } }
 
 /*--------------------------------------------------------------
