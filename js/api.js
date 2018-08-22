@@ -10,16 +10,14 @@
     event.preventDefault();
 
     $.ajax({
-       method: 'post',
-       url: qod_vars.rest_url + 'wp/v2/posts/' + qod_vars.post_id,
-       data: {
-          comment_status: 'closed'
-       },
-       beforeSend: function(xhr) {
-          xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.wpapi_nonce );
-       }
-    }).done( function(response) {
-        history.pushState(null, null, data.slug);
+       method: 'get',
+       url: qod_vars.rest_url + 'wp/v2/posts/' + '?filter[orderby]=rand&filter[posts_per_page]=1',
+
+    }).done( function(data) {
+      var quotes = data.shift();
+
+      $("article").html(quotes.content.rendered + "<p>-" + quotes.title.rendered + "</p>");
+
     });
  });
 
@@ -32,6 +30,8 @@
   //  $(window).on("popstate", function(){
   //   window.location.replace(lastPage);
   //  });
+
+  // history.pushState(null, null, data.slug);
      
    
 
