@@ -69,9 +69,19 @@ function qod_scripts() {
 
 	wp_enqueue_script( 'qod-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'api', get_template_directory_uri() . '/build/js/api.min.js', array( 'jquery' ), false, true );
+
 	/**
-	 * @TODO add localize script rest api JavaScript
+	 * added localize script rest api JavaScript
 	 */
+	 	wp_localize_script( 'api', 'qod_vars', array(
+			 'rest_url' => esc_url_raw( rest_url() ),
+			 'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+			 'success' => 'yess',
+			 'failure' => 'too bad'
+
+		));
+
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 

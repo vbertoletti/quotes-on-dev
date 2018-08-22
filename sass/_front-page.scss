@@ -3,9 +3,15 @@
 
   .content-area {
 
-    i{
+    .fa-quote-left,
+    .fa-quote-right {
       display: none;
 
+      @include desktop-size {
+        display: inline;
+        color:$color_quotes;
+    
+      } 
     }
 
     p{
@@ -98,7 +104,3 @@
 
 
 
-.fa-quote-left,
-.fa-quote-right {
-  color:$color_quotes;
-}

@@ -306,8 +306,14 @@ big {
 
 .home {
   margin-left: 1rem; }
-  .home .content-area i {
+  .home .content-area .fa-quote-left,
+  .home .content-area .fa-quote-right {
     display: none; }
+    @media screen and (min-width: 1080px) {
+      .home .content-area .fa-quote-left,
+      .home .content-area .fa-quote-right {
+        display: inline;
+        color: #00cc00; } }
   .home .content-area p {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -366,10 +372,6 @@ big {
     @media screen and (min-width: 620px) {
       .home .site-main #new-quote-button {
         font-size: 1.3rem; } }
-
-.fa-quote-left,
-.fa-quote-right {
-  color: #00cc00; }
 
 /*--------------------------------------------------------------
 # Elements
