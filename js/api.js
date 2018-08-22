@@ -61,4 +61,33 @@
    * Ajax-based front-end post submissions.
    */
 
+  $('#submit-button-send-quote').on('click', function(event) {
+    event.preventDefault();
+
+    $.ajax({
+       method: 'post',
+       url: qod_vars.rest_url + 'wp/v2/posts/',
+       data: {
+          title: $("#quote-author").val(),
+          content: $("#quote-content").val(),
+          _qod_quote_source: $("quote-source").val(),
+          _qod_quote_source_url: $("quote-source-url").val()
+       },
+       beforeSend: function(xhr) {
+          xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.wpapi_nonce );
+       }
+    }).done( function(response) {
+       $(".quote-submission-wrapper").slideUp();
+    });
+ });
+
+
+
+
+
+
+
+
+
+
 })(jQuery);
