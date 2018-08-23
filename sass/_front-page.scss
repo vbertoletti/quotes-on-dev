@@ -125,7 +125,7 @@ article {
 
 }
 
-.entry-content::before, h1::before {
+.entry-content::before {
   @include desktop-size {
     font-family: FontAwesome;
     content: "\f10d";

@@ -3,11 +3,98 @@
   color: $color__background-body;
   font-family: $font_primary;
   font-weight: 500;
+  margin-bottom: 0;
+
+  @include desktop-size {
+    margin-bottom: 2rem;
+  } 
+  
  }
 }
 
 .post-2 {
-  display: flex;
+
+  .entry-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+    @include tablet-size {
+      margin-right: 3rem;
+    } 
+    
+
+    p {
+      font-size: 1rem;
+
+      a{
+        text-decoration: none;
+        color: $color_quotes;
+        &:hover {
+          color: $color_hover_links;
+        }
+      }
+    }
+
+  }
+
 
 }
 
+.page-template-default {
+
+  #page {
+    @include desktop-size {
+      width: 70vw;
+    }  
+  }
+
+  .site-content {
+    display: flex;
+
+    .content-area {
+      @include desktop-size {
+        padding-left: 50px;
+      } 
+    }
+  }
+
+
+  .entry-content::before {
+    @include desktop-size {
+      display: none;
+    } 
+  }
+
+  .entry-content::after{
+    @include desktop-size {
+      display: none;
+    }
+  }
+  
+  .site-content::before {
+    @include desktop-size {
+        font-family: FontAwesome;
+        content: "\f10d";
+        color:$color_quotes;
+        font-size: 100px;
+
+    } 
+
+  }
+
+  .site-content::after {
+    @include desktop-size {
+      font-family: FontAwesome;
+      content: "\f10e";
+      color:$color_quotes;
+      font-size: 100px;
+
+    } 
+
+  }
+
+
+
+}
