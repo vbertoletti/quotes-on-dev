@@ -70,14 +70,21 @@
        data: {
           title: $("#quote-author").val(),
           content: $("#quote-content").val(),
-          _qod_quote_source: $("quote-source").val(),
-          _qod_quote_source_url: $("quote-source-url").val()
+          _qod_quote_source: $("#quote-source").val(),
+          _qod_quote_source_url: $("#quote-source-url").val()
        },
        beforeSend: function(xhr) {
           xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.wpapi_nonce );
        }
-    }).done( function(response) {
-       $(".quote-submission-wrapper").slideUp();
+    }).done( function() {
+       $("#quote-submission-form").slideUp();
+       $(".submit-success-message").text(
+         qod_vars.success
+       ).show();
+
+    })
+    .fail( function() {
+      alert(qod_vars.failure);
     });
  });
 

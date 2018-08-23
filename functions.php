@@ -78,8 +78,8 @@ function qod_scripts() {
 			 'rest_url' => esc_url_raw( rest_url() ),
 			 'home_url' => esc_url_raw( home_url() ),
 			 'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-			 'success' => 'yess',
-			 'failure' => 'too bad'
+			 'success' => 'Thanks! Your quote submission was received!',
+			 'failure' => 'Sorry, something went wrong. Please try submitting your quote again.'
 		));
 
 }
