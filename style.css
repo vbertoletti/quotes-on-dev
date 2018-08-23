@@ -353,6 +353,7 @@ body {
         color: #090; }
   body .site-main #new-quote-button {
     background-color: transparent;
+    outline: none;
     border: 2px solid #00cc00;
     border-radius: 3px;
     color: #00cc00;
@@ -385,7 +386,7 @@ body {
         margin-top: 0; } }
 
 @media screen and (min-width: 1080px) {
-  .entry-content::before {
+  .entry-content::before, h1::before {
     font-family: FontAwesome;
     content: "\f10d";
     font-size: 100px;
@@ -398,6 +399,16 @@ body {
     content: "\f10e";
     font-size: 100px;
     color: #00cc00; } }
+
+.entry-header h1 {
+  color: #fff;
+  font-family: "Exo", sans-serif;
+  font-weight: 500; }
+
+.post-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Elements

@@ -76,6 +76,7 @@ body {
 
     #new-quote-button {
     background-color: transparent;
+    outline: none;
     border: 2px solid $color_quotes;
     border-radius: 3px;
     color: $color_quotes;
@@ -124,7 +125,7 @@ article {
 
 }
 
-.entry-content::before {
+.entry-content::before, h1::before {
   @include desktop-size {
     font-family: FontAwesome;
     content: "\f10d";
