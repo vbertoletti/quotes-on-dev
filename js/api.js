@@ -25,37 +25,19 @@
         window.location.replace(lastPage);
       });
 
-    
+      $(".entry-content").html(quotes.content.rendered);
+      $(".entry-title").text("- " + quotes.title.rendered);
+
       if(quotes._qod_quote_source_url.length) {
-        $("article").html(
-          quotes.content.rendered + 
-          "<h2 class='entry-title'>-" + 
-          quotes.title.rendered +
-          "<a href='" + " " + quotes._qod_quote_source_url +
-          "'>" +
-          " " + quotes._qod_quote_source +
-          "</a>" +
-          "</h2>"
-       
-        );
-        } else {
-          $("article").html(
-            quotes.content.rendered + 
-            "<h2 class='entry-title'>-" + 
-            quotes.title.rendered +
-            quotes._qod_quote_source +
-            "</h2>"
+        $(".source").html(", " + "<a href='" + quotes._qod_quote_source_url + "'>" + quotes._qod_quote_source + "</a>");
 
-          )};
+      } else if (quotes._qod_quote_source.length)  {
+        $(".source").text(", " + quotes._qod_quote_source);
 
-        
+      };    
     });
 
-
  });
-
-
- 
 
   /**
    * Ajax-based front-end post submissions.

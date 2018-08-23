@@ -3,22 +3,11 @@ body {
 
   .content-area {
 
-    .fa-quote-left,
-    .fa-quote-right {
-      display: none;
-
-      @include desktop-size {
-        display: inline;
-        color:$color_quotes;
-    
-      } 
-    }
-
     p{
       font-family: $font_primary;
       font-weight: 300;
       color: $color__background-body;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
 
       @include tablet-size {
         font-size: 1.8rem;
@@ -55,10 +44,17 @@ body {
       font-family: $font_primary;
       font-weight: 300;
       color: $color__background-body;
+
   
       h2 {
         font-weight: 300;
         margin:0;
+        
+        @include desktop-size {
+          padding-left: 100px;
+    
+        }
+        
       }
   
       span, p{
@@ -84,13 +80,17 @@ body {
     border-radius: 3px;
     color: $color_quotes;
     font-size: 1rem;
-    line-height: 1;
     padding: .75rem 2.25rem;
     box-shadow: none;
     text-shadow: none;
     font-family: $font_primary;
-    margin-bottom: 5rem;
+    margin: 4rem 0;
 
+    @include desktop-size {
+      margin: 4rem 25rem;
+
+    }
+   
     @include tablet-size {
       font-size: 1.3rem;
     }
@@ -100,7 +100,49 @@ body {
 
 
 
+
 }
 
+article {
+  @include desktop-size {
+    max-width: 65vw;
+    margin: 0 auto;
 
+    .entry-content {
+      display: flex;
+      align-content: space-between;
+      margin-left: 0;
+  
+        p {
+        margin-top: 0;
+        }
+  
+  
+    }
+
+  }
+
+}
+
+.entry-content::before {
+  @include desktop-size {
+    font-family: FontAwesome;
+    content: "\f10d";
+    font-size: 100px;
+    color:$color_quotes;
+    padding-right: 20px; 
+  
+
+  } 
+}
+
+.entry-content::after{
+  @include desktop-size {
+    font-family: FontAwesome;
+    content: "\f10e";
+    font-size: 100px;
+    color:$color_quotes;
+
+  }
+}
 
