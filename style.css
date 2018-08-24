@@ -391,14 +391,15 @@ body {
     content: "\f10d";
     font-size: 100px;
     color: #00cc00;
-    padding-right: 20px; } }
+    padding-right: 30px; } }
 
 @media screen and (min-width: 1080px) {
   .entry-content::after {
     font-family: FontAwesome;
     content: "\f10e";
     font-size: 100px;
-    color: #00cc00; } }
+    color: #00cc00;
+    padding-right: 20px; } }
 
 .entry-header h1 {
   color: #fff;
@@ -575,66 +576,114 @@ body {
     .browse-archives ul a:hover, .browse-archives ul a:link:hover, .browse-archives ul a:visited:hover {
       color: #090; }
 
-.category .page-title, .tag .page-title, .error404 .page-title, .search .page-title {
+.category .page-title,
+.tag .page-title,
+.error404 .page-title,
+.search .page-title {
   font-family: "Exo", sans-serif;
   color: #fff;
   border-bottom: 1px dotted #fff;
   padding-bottom: 1.5rem; }
   @media screen and (min-width: 1080px) {
-    .category .page-title, .tag .page-title, .error404 .page-title, .search .page-title {
+    .category .page-title,
+    .tag .page-title,
+    .error404 .page-title,
+    .search .page-title {
       width: 50vw; } }
 
-.category article, .tag article, .error404 article, .search article {
+.category article,
+.tag article,
+.error404 article,
+.search article {
   border-bottom: 1px dotted #fff;
   padding-bottom: 1.5rem; }
 
-.category .number-pagination, .tag .number-pagination, .error404 .number-pagination, .search .number-pagination {
+.category .number-pagination,
+.tag .number-pagination,
+.error404 .number-pagination,
+.search .number-pagination {
   margin: 2rem 0; }
-  .category .number-pagination .current, .tag .number-pagination .current, .error404 .number-pagination .current, .search .number-pagination .current {
+  .category .number-pagination .current,
+  .tag .number-pagination .current,
+  .error404 .number-pagination .current,
+  .search .number-pagination .current {
     color: #fff; }
-  .category .number-pagination a, .tag .number-pagination a, .error404 .number-pagination a, .search .number-pagination a {
+  .category .number-pagination a,
+  .tag .number-pagination a,
+  .error404 .number-pagination a,
+  .search .number-pagination a {
     font-family: "Exo", sans-serif;
     text-decoration: none;
     color: #00cc00;
     font-weight: 200; }
-    .category .number-pagination a:hover, .tag .number-pagination a:hover, .error404 .number-pagination a:hover, .search .number-pagination a:hover {
+    .category .number-pagination a:hover,
+    .tag .number-pagination a:hover,
+    .error404 .number-pagination a:hover,
+    .search .number-pagination a:hover {
       color: #090; }
 
 @media screen and (min-width: 1080px) {
-  .category .page-header, .tag .page-header, .error404 .page-header, .search .page-header {
+  .category .page-header,
+  .tag .page-header,
+  .error404 .page-header,
+  .search .page-header {
     width: 65vw; } }
 
 @media screen and (min-width: 1080px) {
-  .category .entry-content::before, .tag .entry-content::before, .error404 .entry-content::before, .search .entry-content::before {
+  .category .entry-content::before,
+  .tag .entry-content::before,
+  .error404 .entry-content::before,
+  .search .entry-content::before {
     display: none; } }
 
 @media screen and (min-width: 1080px) {
-  .category .entry-content::after, .tag .entry-content::after, .error404 .entry-content::after, .search .entry-content::after {
+  .category .entry-content::after,
+  .tag .entry-content::after,
+  .error404 .entry-content::after,
+  .search .entry-content::after {
     display: none; } }
 
 @media screen and (min-width: 1080px) {
-  .category .site-main, .tag .site-main, .error404 .site-main, .search .site-main {
+  .category .site-main,
+  .tag .site-main,
+  .error404 .site-main,
+  .search .site-main {
     width: 50vw; } }
 
 @media screen and (min-width: 1080px) {
-  .category .site-main .entry-meta h2, .tag .site-main .entry-meta h2, .error404 .site-main .entry-meta h2, .search .site-main .entry-meta h2 {
+  .category .site-main .entry-meta h2,
+  .tag .site-main .entry-meta h2,
+  .error404 .site-main .entry-meta h2,
+  .search .site-main .entry-meta h2 {
     padding-left: 0; } }
 
 @media screen and (min-width: 1080px) {
-  .category, .tag, .error404, .search {
+  .category,
+  .tag,
+  .error404,
+  .search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .category #page, .tag #page, .error404 #page, .search #page {
+    .category #page,
+    .tag #page,
+    .error404 #page,
+    .search #page {
       margin: 0 auto; }
-    .category::before, .tag::before, .error404::before, .search::before {
+    .category::before,
+    .tag::before,
+    .error404::before,
+    .search::before {
       font-family: FontAwesome;
       content: "\f10d";
       color: #00cc00;
       font-size: 100px;
       margin-left: 10rem;
       margin-top: 10rem; }
-    .category::after, .tag::after, .error404::after, .search::after {
+    .category::after,
+    .tag::after,
+    .error404::after,
+    .search::after {
       font-family: FontAwesome;
       content: "\f10e";
       color: #00cc00;
@@ -1019,6 +1068,33 @@ body {
 
 .search article {
   border-bottom: 0; }
+
+.search-no-results .clearfix {
+  border: 0; }
+  .search-no-results .clearfix .search-field {
+    background: transparent;
+    border-color: #00cc00;
+    width: 250px;
+    height: 30px;
+    font-family: "Exo", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 200;
+    outline-color: white;
+    color: #fff; }
+  .search-no-results .clearfix .search-submit {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0; }
+    .search-no-results .clearfix .search-submit span {
+      color: #00cc00;
+      text-shadow: none;
+      font-size: 1.5rem; }
+      .search-no-results .clearfix .search-submit span:hover {
+        color: #090; }
+
+.search-no-results .site-info {
+  margin-top: 7rem; }
 
 .error404 .page-title {
   border: 0; }

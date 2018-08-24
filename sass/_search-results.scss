@@ -15,3 +15,49 @@
     border-bottom: 0;
   }
 }
+
+//NO RESULTS 
+
+.search-no-results{
+  .clearfix {
+
+    border: 0;
+
+    .search-field {
+      background: transparent;
+      border-color: $color_quotes;
+      width: 250px;
+      height: 30px;
+      font-family: $font_primary;
+      font-size: 1.3rem;
+      font-weight: 200;
+      outline-color: white;
+      color: $color__background-body;
+  
+      }
+
+    .search-submit {
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+  
+
+      span {
+        color: $color_quotes;
+        text-shadow: none;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: $color_hover_links; 
+        }
+      
+      }
+
+
+  }
+}
+
+.site-info {
+  margin-top: 7rem;
+}
+}
