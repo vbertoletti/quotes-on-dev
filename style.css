@@ -521,6 +521,80 @@ body {
   .page-id-210 .site-content {
     padding-left: 8rem; } }
 
+.quote-submission p {
+  margin-bottom: 3rem;
+  margin-top: 0; }
+  .quote-submission p a {
+    text-decoration: none;
+    color: #00cc00; }
+    @media screen and (min-width: 620px) {
+      .quote-submission p a {
+        font-size: 1.5rem; } }
+    .quote-submission p a:hover {
+      color: #090; }
+
+.page-id-208 .content-area {
+  max-width: 50vw; }
+
+.browse-archives h2 {
+  font-family: "Exo", sans-serif;
+  color: #fff; }
+
+.browse-archives .clearfix {
+  width: 350px;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 620px) {
+    .browse-archives .clearfix {
+      width: 900px; } }
+  @media screen and (min-width: 620px) {
+    .browse-archives .clearfix {
+      width: 650px; } }
+
+.browse-archives ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .browse-archives ul li {
+    padding-bottom: 10px; }
+  .browse-archives ul a, .browse-archives ul a:link, .browse-archives ul a:visited {
+    text-decoration: none;
+    font-family: "Exo", sans-serif;
+    color: #00cc00;
+    font-weight: 200;
+    padding-right: 20px; }
+    @media screen and (min-width: 620px) {
+      .browse-archives ul a, .browse-archives ul a:link, .browse-archives ul a:visited {
+        font-size: 1.3rem; } }
+    .browse-archives ul a:hover, .browse-archives ul a:link:hover, .browse-archives ul a:visited:hover {
+      color: #090; }
+
+.category .page-title {
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 1.5rem; }
+
+.category article {
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 1.5rem; }
+
+.category .number-pagination {
+  margin: 2rem 0; }
+  .category .number-pagination .current {
+    color: #fff; }
+  .category .number-pagination a {
+    font-family: "Exo", sans-serif;
+    text-decoration: none;
+    color: #00cc00;
+    font-weight: 200; }
+    .category .number-pagination a:hover {
+      color: #090; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/

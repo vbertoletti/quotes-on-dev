@@ -1,0 +1,97 @@
+.page-id-208 {
+  .content-area {
+    max-width: 50vw;
+
+  }
+}
+
+
+.browse-archives {
+  h2 {
+    font-family: $font_primary;
+    color: $color__background-body;
+
+  }
+
+  .clearfix {
+    width: 350px;
+    margin-bottom: 3rem;
+
+    @include tablet-size {
+      width: 900px;
+
+    }
+
+    @include tablet-size {
+      width: 650px;
+
+    }
+
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      padding-bottom: 10px;
+    }
+    
+
+    a, a:link, a:visited{
+      text-decoration: none;
+      font-family: $font_primary;
+      color: $color_quotes;
+      font-weight: 200;
+      padding-right: 20px;
+
+      @include tablet-size {
+        font-size: 1.3rem;
+  
+      }
+      &:hover {
+        color: $color_hover_links;
+      }
+
+    }
+  }
+}
+
+//CATEGORY
+
+.category {
+  .page-title {
+    font-family: $font_primary;
+    color: $color__background-body;
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 1.5rem;
+  }
+
+  article {
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 1.5rem;
+  }
+
+  .number-pagination {
+    margin: 2rem 0;
+
+    .current {
+      color: $color__background-body;
+    }
+
+    a{
+      font-family: $font_primary;
+      text-decoration: none;
+      color: $color_quotes;
+      font-weight: 200;
+
+      &:hover {
+        color: $color_hover_links;
+      }
+    }
+  }
+}
+
