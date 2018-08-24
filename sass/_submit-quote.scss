@@ -17,6 +17,7 @@
     border-color: $color_quotes;
     margin: 1rem 0;
     width: 250px;
+    color: white;
 
     @include desktop-size {
       width: 300px;
@@ -28,6 +29,7 @@
     outline-color: $color__background-body;
     border-color: $color_quotes;
     margin: 1rem 0;
+    color: white;
 
     @include desktop-size {
       width: 500px;
