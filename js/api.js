@@ -1,21 +1,32 @@
 (function($) {
   'use strict';
 
+      document.addEventListener("keydown", function() {
+      //  console.log(event);      
+      // Ben showed me how to find the corresponding keys by console logging the event, like we did for the pong project. Also, got rid of event prevent default. 
+
+      if (event.keyCode === 32 || event.keyCode === 13) {
+        $('#new-quote-button').trigger('click')
+      }
+    });
+
+
   /**
    * Ajax-based random post fetching & History API
    * 
    */
   var lastPage = "";
   
-
   $('#new-quote-button').on('click', function(event) {
     event.preventDefault();
-    
+
     $.ajax({
        method: 'get',
        url: qod_vars.rest_url + 'wp/v2/posts/' + '?filter[orderby]=rand&filter[posts_per_page]=1',
 
     }).done( function(data) {
+
+
       var quotes = data.shift();
       lastPage = document.URL;
 
@@ -28,12 +39,6 @@
       $(".entry-content").html(quotes.content.rendered);
       $(".entry-title").text("- " + quotes.title.rendered);
 
-      // if (quotes._qod_quote_source.length)  {
-      //   $(".source").text(", " + quotes._qod_quote_source);
-      // } else {
-      //   $(".source").html('');
-      // }
-
       if(quotes._qod_quote_source_url.length) {
         $(".source").html(", " + "<a href='" + quotes._qod_quote_source_url + "'>" + quotes._qod_quote_source + "</a>");
       } else if(quotes._qod_quote_source.length){
@@ -42,9 +47,7 @@
       else {
         $(".source").html('');
       } 
-      
-     
-      
+  
     });
 
  });
@@ -79,8 +82,6 @@
       alert(qod_vars.failure);
     });
  });
-
-
 
 
 })(jQuery);
