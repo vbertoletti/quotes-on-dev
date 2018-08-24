@@ -1,0 +1,59 @@
+#quote-submission-form div {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-family: $font_primary;
+    color: $color__background-body;
+    font-weight: 200;
+  }
+
+
+  #quote-author, 
+  #quote-source, 
+  #quote-source-url {
+    background: transparent;
+    outline-color: $color__background-body;
+    border-color: $color_quotes;
+    margin: 1rem 0;
+    width: 250px;
+
+    @include desktop-size {
+      width: 300px;
+    }
+  }
+
+  #quote-content {
+    background: transparent;
+    outline-color: $color__background-body;
+    border-color: $color_quotes;
+    margin: 1rem 0;
+
+    @include desktop-size {
+      width: 500px;
+    }
+
+  }
+
+}
+
+#submit-button-send-quote {
+  @include button;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.quote-submission {
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.page-id-210 {
+  .site-content {
+    @include desktop-size {
+      padding-left: 8rem;
+
+    }
+  }
+}

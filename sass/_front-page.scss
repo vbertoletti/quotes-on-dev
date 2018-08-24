@@ -75,26 +75,15 @@ body {
     }
 
     #new-quote-button {
-    background-color: transparent;
-    outline: none;
-    border: 2px solid $color_quotes;
-    border-radius: 3px;
-    color: $color_quotes;
-    font-size: 1rem;
-    padding: .75rem 2.25rem;
-    box-shadow: none;
-    text-shadow: none;
-    font-family: $font_primary;
-    margin: 4rem 0;
-
-    @include desktop-size {
+      @include button;
+    
+      @include desktop-size {
       margin: 4rem 25rem;
-
-    }
+      }
    
-    @include tablet-size {
+      @include tablet-size {
       font-size: 1.3rem;
-    }
+     }
     }
   }
 

@@ -19,3 +19,17 @@
 	}
   
 }
+
+@mixin button {
+	background-color: transparent;
+    outline: none;
+    border: 2px solid $color_quotes;
+    border-radius: 3px;
+    color: $color_quotes;
+    font-size: 1rem;
+    padding: .75rem 2.25rem;
+    box-shadow: none;
+    text-shadow: none;
+    font-family: $font_primary;
+    margin: 4rem 0;
+}
