@@ -1009,6 +1009,17 @@ body {
             justify-content: flex-end;
     margin-bottom: 5rem; } }
 
+.search .entry-title a {
+  text-decoration: none;
+  font-family: "Exo", sans-serif;
+  color: #00cc00; }
+
+.search .entry-summary p {
+  font-size: 1rem; }
+
+.search article {
+  border-bottom: 0; }
+
 .error404 .page-title {
   border: 0; }
 
