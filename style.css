@@ -575,66 +575,66 @@ body {
     .browse-archives ul a:hover, .browse-archives ul a:link:hover, .browse-archives ul a:visited:hover {
       color: #090; }
 
-.category .page-title, .tag .page-title, .error404 .page-title {
+.category .page-title, .tag .page-title, .error404 .page-title, .search .page-title {
   font-family: "Exo", sans-serif;
   color: #fff;
   border-bottom: 1px dotted #fff;
   padding-bottom: 1.5rem; }
   @media screen and (min-width: 1080px) {
-    .category .page-title, .tag .page-title, .error404 .page-title {
+    .category .page-title, .tag .page-title, .error404 .page-title, .search .page-title {
       width: 50vw; } }
 
-.category article, .tag article, .error404 article {
+.category article, .tag article, .error404 article, .search article {
   border-bottom: 1px dotted #fff;
   padding-bottom: 1.5rem; }
 
-.category .number-pagination, .tag .number-pagination, .error404 .number-pagination {
+.category .number-pagination, .tag .number-pagination, .error404 .number-pagination, .search .number-pagination {
   margin: 2rem 0; }
-  .category .number-pagination .current, .tag .number-pagination .current, .error404 .number-pagination .current {
+  .category .number-pagination .current, .tag .number-pagination .current, .error404 .number-pagination .current, .search .number-pagination .current {
     color: #fff; }
-  .category .number-pagination a, .tag .number-pagination a, .error404 .number-pagination a {
+  .category .number-pagination a, .tag .number-pagination a, .error404 .number-pagination a, .search .number-pagination a {
     font-family: "Exo", sans-serif;
     text-decoration: none;
     color: #00cc00;
     font-weight: 200; }
-    .category .number-pagination a:hover, .tag .number-pagination a:hover, .error404 .number-pagination a:hover {
+    .category .number-pagination a:hover, .tag .number-pagination a:hover, .error404 .number-pagination a:hover, .search .number-pagination a:hover {
       color: #090; }
 
 @media screen and (min-width: 1080px) {
-  .category .page-header, .tag .page-header, .error404 .page-header {
+  .category .page-header, .tag .page-header, .error404 .page-header, .search .page-header {
     width: 65vw; } }
 
 @media screen and (min-width: 1080px) {
-  .category .entry-content::before, .tag .entry-content::before, .error404 .entry-content::before {
+  .category .entry-content::before, .tag .entry-content::before, .error404 .entry-content::before, .search .entry-content::before {
     display: none; } }
 
 @media screen and (min-width: 1080px) {
-  .category .entry-content::after, .tag .entry-content::after, .error404 .entry-content::after {
+  .category .entry-content::after, .tag .entry-content::after, .error404 .entry-content::after, .search .entry-content::after {
     display: none; } }
 
 @media screen and (min-width: 1080px) {
-  .category .site-main, .tag .site-main, .error404 .site-main {
+  .category .site-main, .tag .site-main, .error404 .site-main, .search .site-main {
     width: 50vw; } }
 
 @media screen and (min-width: 1080px) {
-  .category .site-main .entry-meta h2, .tag .site-main .entry-meta h2, .error404 .site-main .entry-meta h2 {
+  .category .site-main .entry-meta h2, .tag .site-main .entry-meta h2, .error404 .site-main .entry-meta h2, .search .site-main .entry-meta h2 {
     padding-left: 0; } }
 
 @media screen and (min-width: 1080px) {
-  .category, .tag, .error404 {
+  .category, .tag, .error404, .search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .category #page, .tag #page, .error404 #page {
+    .category #page, .tag #page, .error404 #page, .search #page {
       margin: 0 auto; }
-    .category::before, .tag::before, .error404::before {
+    .category::before, .tag::before, .error404::before, .search::before {
       font-family: FontAwesome;
       content: "\f10d";
       color: #00cc00;
       font-size: 100px;
       margin-left: 10rem;
       margin-top: 10rem; }
-    .category::after, .tag::after, .error404::after {
+    .category::after, .tag::after, .error404::after, .search::after {
       font-family: FontAwesome;
       content: "\f10e";
       color: #00cc00;

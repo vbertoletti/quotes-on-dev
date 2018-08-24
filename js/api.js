@@ -28,18 +28,23 @@
       $(".entry-content").html(quotes.content.rendered);
       $(".entry-title").text("- " + quotes.title.rendered);
 
+      // if (quotes._qod_quote_source.length)  {
+      //   $(".source").text(", " + quotes._qod_quote_source);
+      // } else {
+      //   $(".source").html('');
+      // }
+
       if(quotes._qod_quote_source_url.length) {
         $(".source").html(", " + "<a href='" + quotes._qod_quote_source_url + "'>" + quotes._qod_quote_source + "</a>");
-      } else {
+      } else if(quotes._qod_quote_source.length){
+        $(".source").text(", " + quotes._qod_quote_source);
+      } 
+      else {
         $(".source").html('');
       } 
       
-      if (quotes._qod_quote_source.length)  {
-        $(".source").text(", " + quotes._qod_quote_source);
-      } else {
-        $(".source").html('');
-      }
-
+     
+      
     });
 
  });
