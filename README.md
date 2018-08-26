@@ -1,23 +1,25 @@
-# Quotes on Dev Starter
+# About Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A multi-page, responsive website that generates random development-related quotes. 
+WordPress is being used as the content management system.
 
-## Installation
 
-### 1. Download me (don't clone me!)
+-> Desktop view of the Ajax random post fetching & History API. You can choose to click the button, hit space bar or the 'enter' key to see a new quote. 
 
-Then add me to your `wp-content/themes` directory.
+![quotesondev](https://user-images.githubusercontent.com/40447526/44633689-6065fe00-a943-11e8-8022-56a697cfeeb5.gif)
 
-### 2. Rename the `quotesondev-starter-master` directory
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+-> Mobile view of the Ajax post submissions:
 
-### 3. Install the dev dependencies
+<img width="383" alt="screen shot 2018-08-26 at 3 18 03 pm" src="https://user-images.githubusercontent.com/40447526/44633704-8d1a1580-a943-11e8-9fce-a4aba9a52a00.png">
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+## Technologies 
 
-And now would be a good time to `git init` :)
+The main purpose for this project was to combine both JavaScript and WordPress knowledge, using the WordPress REST API.
+
+## Personal Learnings
+
+Another opportunity to strengthen WordPress, JavaScript and SCSS skills. 
+

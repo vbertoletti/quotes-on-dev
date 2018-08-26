@@ -694,8 +694,9 @@ body {
       margin-top: 10rem;
       margin-right: 10rem; } }
 
-.wp-tag-cloud li a {
-  font-size: 1.3rem !important; }
+@media screen and (min-width: 1080px) {
+  .wp-tag-cloud li a {
+    font-size: 1.3rem !important; } }
 
 /*--------------------------------------------------------------
 # Elements
